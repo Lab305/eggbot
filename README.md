@@ -35,15 +35,27 @@
                                                   <h2>Операционная система Raspbian</h2>
 <p>1) Установим Arduino IDE.<br>
 			sudo apt install arduino -y<br>
-2) Скачаем прошивку с сайта https://github.com/ProbotXYZ/EggBot/blob/master/Firmware/Firmware.zip
-3) Заливаем прошивку в Сферобота. <br>
+2) Скачаем xarchiver.<br>
+			sudo apt install xarchiver -y <br>
+3) Скачаем прошивку с сайта https://github.com/ProbotXYZ/EggBot/blob/master/Firmware/Firmware.zip <br>
+		Разархивируем архив, нажав правой кнопкой мыши по нему и выбрав "Разархивировать в текущую папку".<br>
+4) Заливаем прошивку в Сферобота. <br>
 		Захожим в папку "EggDuino" и нажав правой кнопкой мыши по файлу "EggDuino.ino" выбираем пункт "Arduino IDE"<br>
 		Нажимаем на стрелочку "->", чтобы залить прошивку. Прошивка должна залиться успешно.<br>
-4) Скачиваем Inkscape.
+5) Скачиваем Inkscape.
 			sudo apt inkscape -y
-5) Скачиваем расширение с сайта https://github.com/ProbotXYZ/EggBot/blob/master/Software/Inkscape_extension_only.zip<br>
+6) Скачиваем расширение с сайта https://github.com/ProbotXYZ/EggBot/blob/master/Software/Inkscape_extension_only.zip<br>
+		Разархивируем архив.<br>
+7) Отредактируем файл "ebb_serial.py"<br>
+		Откроем файл.<br>
+			nano /home/pi/Загрузки/extensions/ebb_serial.py <br>
+		Находим строчку с надписью "USB-SERIAL CH340" и меняем данные на "/dev/ttyACM0/".<br>
+		Нажимаем X, затем Y, затем Enter.
+8) Переместим файлы с плагинами.
+			sudo cp -r /home/pi/Загрузки/extensions/* /usr/share/inkscape/extensions/
+			sudo cp -r /home/pi/Загрузки/templates/* /usr/share/inkscape/templates/
 																								
-		
+<h1>Далее всё ломается, как раньше не получается	</h1>
 		
 </body>
 </html>
