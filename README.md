@@ -42,8 +42,8 @@
 4) Заливаем прошивку в Сферобота. <br>
 		Захожим в папку "EggDuino" и нажав правой кнопкой мыши по файлу "EggDuino.ino" выбираем пункт "Arduino IDE"<br>
 		Нажимаем на стрелочку "->", чтобы залить прошивку. Прошивка должна залиться успешно.<br>
-5) Скачиваем Inkscape.
-			sudo apt inkscape -y
+5) Скачиваем Inkscape.<br>
+			sudo apt install inkscape -y<br>
 6) Скачиваем расширение с сайта https://github.com/ProbotXYZ/EggBot/blob/master/Software/Inkscape_extension_only.zip<br>
 		Разархивируем архив.<br>
 7) Отредактируем файл "ebb_serial.py"<br>
